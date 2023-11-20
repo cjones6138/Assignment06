@@ -261,9 +261,9 @@ public class Main extends Application {
 	 */
 	public static Connection getConnection() throws Exception{
 		try {
-			String url = "jdbc:mysql://localhost:3306/word_occurrences";
-			String username = "cjones";
-			String password = "password123";
+			String url = "jdbc:mysql://localhost:3306/*";
+			String username = "*";
+			String password = "*";
 			
 			Connection conn = DriverManager.getConnection(url, username, password);
 			System.out.println("Connected");
